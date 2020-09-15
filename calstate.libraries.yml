@@ -1,0 +1,12 @@
+style:
+  version: 1.0
+  css:
+    theme:
+      assets/css/calstate.style.css: {}
+      assets/css/project.style.css: {}
+  js:
+    assets/js/calstate.script.js: {}
+    assets/js/project.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

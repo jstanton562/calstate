@@ -1,0 +1,26 @@
+// Page: Header
+// -----------------------------------------------------------------------------
+.page__header {
+
+}
+
+// Navbar
+// ----------------------------------------------------------------------------
+.nav-item {
+  font-size: 1.125rem;
+}
+
+.nav-link {
+	font-weight: 600;
+	&:hover {
+		background-color: $gray-200;
+		text-decoration: underline;
+	} 
+}
+
+// Banner
+// ----------------------------------------------------------------------------
+.banner {
+  border-top: solid 8px $red;
+  border-bottom: solid 1px $red;
+}

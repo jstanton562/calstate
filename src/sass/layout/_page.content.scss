@@ -1,0 +1,43 @@
+// Page: Content
+// -----------------------------------------------------------------------------
+body, .dialog-off-canvas-main-canvas {
+	height: 100vh;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.page__content {
+  
+}
+
+.sidebar-col {
+	@include make-col-ready();
+	margin-bottom: 1rem;
+	background-color: $gray-100;
+	border-bottom: 1px solid $gray-300;
+	@include media-breakpoint-up(lg) {
+		@include make-col(4);
+		margin-bottom: 0;
+		background-color: #fff;
+		border-bottom: none;
+	}
+}
+
+.main-col {
+	@include make-col-ready();
+	@include media-breakpoint-up(lg) {
+		@include make-col(8);
+		padding-left: 1.25rem;
+		border-left: 1px solid #dee2e6;
+	}
+}
+
+

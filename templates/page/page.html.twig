@@ -1,0 +1,92 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<div class="page">
+  <header>
+    {% embed '@calstate/navbar/navbar.twig' with {
+      placement: 'sticky-top',
+      container: 'fluid',
+      color: 'light',
+      utility_classes: ['bg-light'],
+    } %}
+
+      {% block branding %}
+        {% if page.navbar_branding %}
+          {{ page.navbar_branding }}
+        {% endif %}
+      {% endblock %}
+
+      {% block left %}
+        {% if page.navbar_left %}
+          <div class="mr-auto">
+            {{ page.navbar_left }}
+          </div>
+        {% endif %}
+      {% endblock %}
+
+      {% block right %}
+        {% if page.navbar_right %}
+          {{ page.navbar_right }}
+        {% endif %}
+      {% endblock %}
+    {% endembed %}
+    <div class="banner">
+      
+    </div>
+    {% if page.header %}
+      <div class="page__header mb-lg-3">
+        {{ page.header }}
+      </div>
+    {% endif %}
+  </header>
+
+  <main class="py-lg-3">
+
+    {% if page.content %}
+      <div class="page__content">
+        <div class="container">
+          <div class="row">
+            {% if page.sidebar %}
+              <div class="sidebar-col">
+                <button id="mobileSidebarBtn" class="d-lg-none btn btn-secondary my-2" type="button" data-toggle="collapse" data-target="#mobileSidebar" aria-expanded="false" aria-controls="mobileSidebar">
+                  Toggle Menu
+                </button>
+                <div class="collapse" id="mobileSidebar">
+                  {{ page.sidebar }}
+                </div>
+              </div>
+              <div class="main-col">
+                {{ page.content }}
+              </div>
+            {% else %}
+              <div class="col-12">
+                {{ page.content }}
+              </div>
+            {% endif %}
+            
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </main>
+
+  {% if page.footer %}
+    <footer class="page__footer csu-footer">
+      <div class="container">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+  {% if page.subfooter %}
+    <div class="page__subfooter csu-subfooter">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center">
+          {{ page.subfooter }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>

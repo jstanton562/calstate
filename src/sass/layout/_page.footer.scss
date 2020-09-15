@@ -1,0 +1,29 @@
+// Page: Footer
+// -----------------------------------------------------------------------------
+.page__footer {
+
+}
+
+.csu-footer {
+  background-color: $csu-black;
+  border-top: solid 8px $red; 
+  color: $gray-100;
+  font-size: .75rem;
+  padding: 2rem;
+  a {
+  	color: $white;
+  }
+}
+
+.csu-subfooter {
+  padding: 1rem;
+  background-color: $black;
+  color: $white;
+  a {
+  	color: $white;
+  }
+}
+
+.footer-heading {
+  margin-bottom: .5rem;
+}

@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Template for the branding block.
+ */
+#}
+{% embed '@radix/block/block.twig' with {
+  html_tag: 'div',
+} %}
+
+{% block content %}
+  {% include '@radix/navbar/navbar-brand.twig' with {
+    image: site_logo,
+    width: 'auto',
+    height: 40,
+    path: path('<front>'),
+    style: 'margin-right: 2rem;',
+    alt: 'The California State University' ,
+  } %}
+{% endblock %}
+
+{% endembed %}
