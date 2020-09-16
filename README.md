@@ -21,6 +21,9 @@ Go to the root of the Calstate directory and run the following command: `npm ins
 Update the `proxy` variable in *webpack.mix.js*.
 
 #### Step 6
+Run one of the following commands from the *calstate* root to compile the SASS: `npm run watch` (to watch for changes), `npm run dev`, or `npm run production` 
+
+#### Step 7
 In your Drupal site's admin interface, set up the initial Block layout as follows:
 1. Navbar branding
 	* Site branding
@@ -42,10 +45,9 @@ In your Drupal site's admin interface, set up the initial Block layout as follow
 	* Help
 	* Primary admin actions
 
-#### Styling and Templating
+### Styling and Templating
 * Regions are defined in the *calstate.info.yml* file
 * Most project specific styles and behaviors can be written in the *assets/css/project.style.css* and *assets/js/project.script.js* files
-* CSU styles have been built into the SASS here: *src/sass*, primarily in the *base* directory
-* Run one of the following commands from the *calstate* root to compile the SASS: `npm run watch` (to watch for changes), `npm run dev`, or `npm run production` 
+* CSU styles have been built into the SASS here: *src/sass*, primarily in the *base* directory (any changes to the SASS will require recompiling - Step 6 above)
 * The Google fonts reference is located in the *templates/html.html.twig* file
 * Turn on Twig Debug mode in *docroot/sites/default/services.yml* (around line 58) to identify which templates are being used
