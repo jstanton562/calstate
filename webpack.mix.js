@@ -7,7 +7,7 @@
  | for your application. See https://github.com/JeffreyWay/laravel-mix.
  |
  */
-const proxy = 'http://ati.dev.dd';
+const proxy = 'http://drupal-8-9-1.dd';
 const mix = require('laravel-mix');
 
 /*
