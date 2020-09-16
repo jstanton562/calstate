@@ -1,6 +1,16 @@
 # Installation
 
-RADIX_SUBTHEME_NAME theme uses [Webpack](https://webpack.js.org) to compile and bundle SASS and JS.
+CALSTATE is a subtheme of the Radix base Drupal theme. It is built to run on Drupal 8.x. It can be used on Drupal 9.x by installing the dev version of Radix, but it may require some tweaking.
+
+### Step 1
+Install and enable [Radix and Components](https://www.drupal.org/project/radix) in your Drupal project
+
+
+
+
+
+
+CALSTATE theme uses [Webpack](https://webpack.js.org) to compile and bundle SASS and JS.
 
 #### Step 1
 Make sure you have Node and npm installed. 
