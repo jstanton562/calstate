@@ -2,6 +2,8 @@
 
 Calstate is a subtheme of the Radix base Drupal theme. It uses [Webpack](https://webpack.js.org) to compile and bundle SASS and JS. It is built to run on Drupal 8.x -- It can be used on Drupal 9.x by installing the dev version of Radix, but it may require some tweaking.
 
+For a tutorial on working with Radix see this video: https://www.webwash.net/getting-started-with-bootstrap-4-using-radix-in-drupal/
+
 #### Step 1
 Install and enable [Radix 8.x-4.x and Components](https://www.drupal.org/project/radix) in your Drupal project
 
