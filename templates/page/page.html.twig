@@ -44,19 +44,13 @@
   </header>
 
   <main class="py-lg-3">
-
     {% if page.content %}
       <div class="page__content">
         <div class="container">
           <div class="row">
             {% if page.sidebar %}
               <div class="sidebar-col">
-                <button id="mobileSidebarBtn" class="d-lg-none btn btn-secondary my-2" type="button" data-toggle="collapse" data-target="#mobileSidebar" aria-expanded="false" aria-controls="mobileSidebar">
-                  Toggle Menu
-                </button>
-                <div class="collapse" id="mobileSidebar">
-                  {{ page.sidebar }}
-                </div>
+                {{ page.sidebar }}
               </div>
               <div class="main-col">
                 {{ page.content }}

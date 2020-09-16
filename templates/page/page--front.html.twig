@@ -38,31 +38,26 @@
     </div>
   </header>
 
-  <main class="pt-5">
-    {% if page.header %}
-      <div class="page__header mb-3">
-        <div class="container">
-          {{ page.header }}
-        </div>
-      </div>
-    {% endif %}
-
+  <main class="py-lg-3">
     {% if page.content %}
       <div class="page__content">
-        <div class="container pb-5">
+        <div class="container">
           <div class="row">
-            <div class="col-12">
-              {{ page.content }}
-            </div>
+            {% if page.sidebar %}
+              <div class="sidebar-col">
+                {{ page.sidebar }}
+              </div>
+              <div class="main-col">
+                {{ page.content }}
+              </div>
+            {% else %}
+              <div class="col-12">
+                {{ page.content }}
+              </div>
+            {% endif %}
+            
           </div>
         </div>
-        {% if page.news %}
-          <div class="hp-news">
-            <div class="container">
-              {{ page.news }}
-            </div>
-          </div>
-        {% endif %}
       </div>
     {% endif %}
   </main>
